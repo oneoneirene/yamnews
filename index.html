@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="./style/all.css" rel="stylesheet" type="text/css"/>
+      <!-- Font Awesome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+      <script src="https://kit.fontawesome.com/3342b80b26.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="top">
+        <div class="top_content">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="searchbar">
+                <div class="keyword">
+                    熱門：
+                   <a href="#">電費調漲</a>、
+                   <a href="#">午後雷陣雨</a>、
+                   <a href="#">開箱</a>、
+                   <a href="#">電費調漲</a>、
+                   <a href="#">午後雷陣雨</a>、
+                   <a href="#">開箱</a>
+                </div>
+                <div class="search_content">
+                    <input type="search" id="searcharea" placeholder="請輸入關鍵字">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="weather">
+                <select name="地區" id="region">
+                    <option>基隆市</option>
+                    <option>臺北市</option>
+                    <option>新北市</option>
+                    <option>桃園市</option>
+                    <option>新竹市</option>
+                    <option>新竹縣</option>
+                    <option>苗栗縣</option>
+                    <option>台中市</option>
+                    <option>彰化縣</option>
+                    <option>南投縣</option>
+                    <option>雲林縣</option>
+                    <option>嘉義市</option>
+                    <option>嘉義縣</option>
+                    <option>臺南市</option>
+                    <option>高雄市</option>
+                    <option>屏東縣</option>
+                    <option>臺東縣</option>
+                    <option>花蓮縣</option>
+                    <option>宜蘭縣</option>
+                    <option>澎湖縣</option>
+                    <option>金門縣</option>
+                    <option>連江縣</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="content_container">
+        <div class="news_category">
+            <ul>
+                <li><a href="#">焦點</a></li>
+                <li><a href="#">新冠肺炎</a></li>
+                <li><a href="#">即時</a></li>
+                <li><a href="#">兔年新春特輯</a></li>
+                <li><a href="#">社會</a></li>
+                <li><a href="#">生活</a></li>
+                <li><a href="#">財經</a></li>
+                <li><a href="#">健康</a></li>
+                <li><a href="#">科技</a></li>
+                <li><a href="#">焦點</a></li>
+                <li><a href="#">新冠肺炎</a></li>
+                <li><a href="#">即時</a></li>
+                <li><a href="#">新冠</a></li>
+                <li><a href="#">即時</a></li>
+                <li><a href="#">新春</a></li>
+                <li><a href="#">...</a></li>
+            </ul>
+        </div>
+        <div class="content_ad">
+            廣告
+        </div>
+        <div class="main_content">
+            <div class="page_left">
+                <div class="main_article">
+                    <div class="main_img">
+                        <div class="main_title">
+                            98%實測有效！該成分能穩定血糖兼瘦
+                        </div>
+                        <img src="./img/20230204014256_8d5afde6.jpg" alt="">
+                    </div>
+                    <div class="article_menu">
+                        <ul>
+                            <li><a href="#">日本香川縣知事池田豐人率團訪桃交流　期盼深化香川與桃園交流互動</a></li>
+                            <li><a href="#">燈會太精彩老婦迷失　婦幼警陪伴尋人頻頻道謝！</a></li>
+                            <li><a href="#">強震重創土耳其！14人女排隊「全員疑遭活埋」　前英超球員也失蹤</a></li>
+                            <li><a href="#">陳建仁內閣／運安會主委楊宏智「翹班泡溫泉」？行政院：限3天完成調查</a></li>
+                            <li><a href="#">要人也要神！彰化警長張國雄率隊到福安宮為民祈福</a></li>
+                            <li><a href="#">妙齡女車禍後慘變Ｏ型腿！該換關節還是保膝矯正？醫：要考慮年紀及活動性</a></li>
+                            <li><a href="#">鴻兔大展創新局　太極門高雄道館元宵舉辦新春茶敘</a></li>
+                            <li><a href="#">【有影】手機界單眼來了！三星新機倡永續 S23旗艦入手價26900元</a></li>
+                            <li><a href="#">兩岸電視主持新秀會總決賽　臺灣三選手跨海爭秀</a></li>
+                            <li><a href="#">快檢查！去年9、10月「4張千萬發票」找嘸人　才花＄48喝飲料就中獎</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="news_subject">
+                    <div class="subject">
+                        <div class="sb_title">
+                            <a href="#">◆ 兔年燈節全攻略</a>
+                            <a class="sb_more" href="#">Read More</a>
+                        </div>
+                        <img src="./img/1-1.jpg" alt="">
+                        <div class="sb_menu">
+                            <ul>
+                                <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網 高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                                <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subject" style="padding: 0;">
+                        <div class="sb_title">
+                            <a href="#">◆ 兔年燈節全攻略</a>
+                            <a class="sb_more" href="#">Read More</a>
+                        </div>
+                        <img src="./img/1-1.jpg" alt="">
+                        <div class="sb_menu">
+                            <ul>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subject">
+                        <div class="sb_title">
+                            <a href="#">◆ 兔年燈節全攻略</a>
+                            <a class="sb_more" href="#">Read More</a>
+                        </div>
+                        <img src="./img/1-1.jpg" alt="">
+                        <div class="sb_menu">
+                            <ul>
+                                <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網 高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                                <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subject" style="padding: 0px;">
+                        <div class="sb_title">
+                            <a href="#">◆ 兔年燈節全攻略</a>
+                            <a class="sb_more" href="#">Read More</a>
+                        </div>
+                        <img src="./img/1-1.jpg" alt="">
+                        <div class="sb_menu">
+                            <ul>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subject">
+                        <div class="sb_title">
+                            <a href="#">◆ 兔年燈節全攻略</a>
+                            <a class="sb_more" href="#">Read More</a>
+                        </div>
+                        <img src="./img/1-1.jpg" alt="">
+                        <div class="sb_menu">
+                            <ul>
+                                <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網 高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                                <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subject" style="padding: 0;">
+                        <div class="sb_title">
+                            <a href="#">◆ 兔年燈節全攻略</a>
+                            <a class="sb_more" href="#">Read More</a>
+                        </div>
+                        <img src="./img/1-1.jpg" alt="">
+                        <div class="sb_menu">
+                            <ul>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subject">
+                        <div class="sb_title">
+                            <a href="#">◆ 兔年燈節全攻略</a>
+                            <a class="sb_more" href="#">Read More</a>
+                        </div>
+                        <img src="./img/1-1.jpg" alt="">
+                        <div class="sb_menu">
+                            <ul>
+                                <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網 高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                                <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subject" style="padding: 0;">
+                        <div class="sb_title">
+                            <a href="#">◆ 兔年燈節全攻略</a>
+                            <a class="sb_more" href="#">Read More</a>
+                        </div>
+                        <img src="./img/1-1.jpg" alt="">
+                        <div class="sb_menu">
+                            <ul>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                                <hr>
+                               <li><a href="#">高雄騎士帶走萬元「寵物鴨」 結局暖哭網</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="breaking_news">
+                    <div class="bk_title">
+                        即時新聞
+                    </div>
+                </div>
+            </div>
+            <div class="page_right">
+                <div class="right_ad">
+                    廣告
+                </div>
+                <div class="hot_tag">
+                    <h3>熱門標籤</h3>
+                    <ul>
+                        <li><a href="#">2023年</a></li>
+                        <li><a href="#">2022年</a></li>
+                        <li><a href="#">星雲大師</a></li>
+                        <li><a href="#">大學</a></li>
+                        <li><a href="#">櫻花</a></li>
+                        <li><a href="#">國防部長</a></li>
+                        <li><a href="#">溫泉</a></li>
+                        <li><a href="#">春天</a></li>
+                        <li><a href="#">情人節</a></li>
+                        <li><a href="#">巧克力</a></li>
+                        <li><a href="#">糖果</a></li>
+                        <li><a href="#">元宵節</a></li>
+                    </ul>
+                </div>
+                <div class="right_news">
+                    <div class="today_news">
+                        <div class="td_title">
+                            今日要聞
+                        </div>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today_news">
+                        <div class="td_title">
+                            本周大事
+                        </div>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="td_article">
+                            <div class="td_ar_title">
+                                <a href="#">    
+                                    Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                </a>
+                            </div>
+                            <div class="td_date">
+                                2022.11.01 14:20
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_bt_ad">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
