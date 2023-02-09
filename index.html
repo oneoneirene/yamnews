@@ -9,6 +9,9 @@
         <link href="./style/all.css" rel="stylesheet" type="text/css" />
         <!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/3342b80b26.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.3.js"
             integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
@@ -16,6 +19,31 @@
     </head>
 
     <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="navtitle">
+                <span>所有新聞類別</span>
+            </div>
+            <div class="navoption">
+                <ul>
+                    <li><a href="#">焦點</a></li>
+                    <li><a href="#">新冠肺炎</a></li>
+                    <li><a href="#">即時</a></li>
+                    <li><a href="#">兔年新春特輯</a></li>
+                    <li><a href="#">社會</a></li>
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">財經</a></li>
+                    <li><a href="#">焦點</a></li>
+                    <li><a href="#">新冠肺炎</a></li>
+                    <li><a href="#">即時</a></li>
+                    <li><a href="#">社會</a></li>
+                    <li><a href="#">兔年新春特輯</a></li>
+                    <li><a href="#">社會</a></li>
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">財經</a></li>
+                </ul>
+            </div>
+          </div>
         <div class="top">
             <div class="top_content">
                 <div class="logo">
@@ -24,12 +52,13 @@
                 <div class="searchbar">
                     <div class="keyword">
                         熱門：
-                        <a href="#">電費調漲</a>、
-                        <a href="#">午後雷陣雨</a>、
-                        <a href="#">開箱</a>、
-                        <a href="#">電費調漲</a>、
-                        <a href="#">午後雷陣雨</a>、
-                        <a href="#">開箱</a>
+                        <div class="keyword_tag">
+                            <a href="#">電費調漲</a>、
+                            <a href="#">午後雷陣雨</a>、
+                            <a href="#">開箱</a>、
+                            <a href="#">電費調漲</a>、
+                            <a href="#">午後雷陣雨</a>
+                        </div>
                     </div>
                     <div class="search_content">
                         <input type="search" id="searcharea" placeholder="請輸入關鍵字">
@@ -70,6 +99,37 @@
                         <span>12-15℃</span>
                     </div>
                 </div>
+                <div class="menubutton">
+                    <button class="openmenu" onclick="openNav()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-house"></i>
+                    </button>
+                    <button class="opensearch">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="anothersearch" style="display: none;">
+            <div class="searchcontainer">
+                <input type="search" id="searcharea_sec" placeholder="請輸入關鍵字">
+                <div class="search_word">
+                    熱門：
+                    <div class="search_word_tag">
+                        <a href="#">電費調漲</a>、
+                        <a href="#">午後雷陣雨</a>、
+                        <a href="#">開箱</a>、
+                        <a href="#">電費調漲</a>、
+                        <a href="#">午後雷陣雨</a>
+                        <a href="#">電費調漲</a>、
+                        <a href="#">午後雷陣雨</a>、
+                        <a href="#">開箱</a>、
+                        <a href="#">電費調漲</a>、
+                        <a href="#">午後雷陣雨</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content_container">
@@ -101,7 +161,9 @@
                     <div class="main_article">
                         <div class="main_img">
                             <div class="main_title">
-                                <span>98%實測有效！該成分能穩定血糖兼瘦</span>
+                                <a href="#">
+                                    走進優雅梅林！日本神奈川300品種「溪流梅園」花開正美！
+                                </a>
                             </div>
                             <img src="./img/20230204014256_8d5afde6.jpg" alt="">
                         </div>
@@ -123,7 +185,7 @@
                     <div class="news_subject">
                         <div class="subject">
                             <div class="sb_title">
-                                <a href="#">◆ 兔年燈節全攻略</a>
+                                <a class="sb_name" href="#">◆ 兔年燈節全攻略</a>
                                 <a class="sb_more" href="#">Read More</a>
                             </div>
                             <div class="sb_img">
@@ -146,7 +208,7 @@
                         </div>
                         <div class="subject" style="padding: 0;">
                             <div class="sb_title">
-                                <a href="#">◆ 兔年燈節全攻略</a>
+                                  <a class="sb_name" href="#">◆ 兔年燈節全攻略</a>
                                 <a class="sb_more" href="#">Read More</a>
                             </div>
                             <div class="sb_img">
@@ -169,7 +231,7 @@
                         </div>
                         <div class="subject">
                             <div class="sb_title">
-                                <a href="#">◆ 兔年燈節全攻略</a>
+                                  <a class="sb_name" href="#">◆ 兔年燈節全攻略</a>
                                 <a class="sb_more" href="#">Read More</a>
                             </div>
                             <div class="sb_img">
@@ -192,7 +254,7 @@
                         </div>
                         <div class="subject" style="padding: 0px;">
                             <div class="sb_title">
-                                <a href="#">◆ 兔年燈節全攻略</a>
+                                  <a class="sb_name" href="#">◆ 兔年燈節全攻略</a>
                                 <a class="sb_more" href="#">Read More</a>
                             </div>
                             <div class="sb_img">
@@ -215,7 +277,7 @@
                         </div>
                         <div class="subject">
                             <div class="sb_title">
-                                <a href="#">◆ 兔年燈節全攻略</a>
+                                  <a class="sb_name" href="#">◆ 兔年燈節全攻略</a>
                                 <a class="sb_more" href="#">Read More</a>
                             </div>
                             <div class="sb_img">
@@ -238,7 +300,7 @@
                         </div>
                         <div class="subject" style="padding: 0;">
                             <div class="sb_title">
-                                <a href="#">◆ 兔年燈節全攻略</a>
+                                  <a class="sb_name" href="#">◆ 兔年燈節全攻略</a>
                                 <a class="sb_more" href="#">Read More</a>
                             </div>
                             <div class="sb_img">
@@ -261,7 +323,7 @@
                         </div>
                         <div class="subject">
                             <div class="sb_title">
-                                <a href="#">◆ 兔年燈節全攻略</a>
+                                  <a class="sb_name" href="#">◆ 兔年燈節全攻略</a>
                                 <a class="sb_more" href="#">Read More</a>
                             </div>
                             <div class="sb_img">
@@ -284,7 +346,7 @@
                         </div>
                         <div class="subject" style="padding: 0;">
                             <div class="sb_title">
-                                <a href="#">◆ 兔年燈節全攻略</a>
+                                  <a class="sb_name" href="#">◆ 兔年燈節全攻略</a>
                                 <a class="sb_more" href="#">Read More</a>
                             </div>
                             <div class="sb_img">
@@ -315,7 +377,7 @@
                                 <a class="travel" href="#">旅遊</a>
                             </div>
                             <div class="bk_news_title">
-                                大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場
+                                <a href="#">大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場</a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -326,7 +388,7 @@
                                 <a class="fashion" href="#">時尚</a>
                             </div>
                             <div class="bk_news_title">
-                                谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知
+                                <a href="#"> 谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知</a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -337,7 +399,9 @@
                                 <a class="influencer" href="#">名家專欄</a>
                             </div>
                             <div class="bk_news_title">
-                                島嶼學院＠馬祖 觀光創業大學堂開講
+                                <a href="#">
+                                    島嶼學院＠馬祖 觀光創業大學堂開講
+                                </a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -348,7 +412,7 @@
                                 <a class="travel" href="#">旅遊</a>
                             </div>
                             <div class="bk_news_title">
-                                大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場
+                                <a href="#">大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場</a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -359,7 +423,7 @@
                                 <a class="fashion" href="#">時尚</a>
                             </div>
                             <div class="bk_news_title">
-                                谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知
+                                <a href="#"> 谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知</a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -370,18 +434,19 @@
                                 <a class="influencer" href="#">名家專欄</a>
                             </div>
                             <div class="bk_news_title">
-                                島嶼學院＠馬祖 觀光創業大學堂開講
+                                <a href="#">
+                                    島嶼學院＠馬祖 觀光創業大學堂開講
+                                </a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
                             </div>
-                        </div>
-                        <div class="bk_news">
+                        </div> <div class="bk_news">
                             <div class="bk_category travel">
                                 <a class="travel" href="#">旅遊</a>
                             </div>
                             <div class="bk_news_title">
-                                大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場
+                                <a href="#">大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場</a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -392,7 +457,7 @@
                                 <a class="fashion" href="#">時尚</a>
                             </div>
                             <div class="bk_news_title">
-                                谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知
+                                <a href="#"> 谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知</a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -403,7 +468,43 @@
                                 <a class="influencer" href="#">名家專欄</a>
                             </div>
                             <div class="bk_news_title">
-                                島嶼學院＠馬祖 觀光創業大學堂開講
+                                <a href="#">
+                                    島嶼學院＠馬祖 觀光創業大學堂開講
+                                </a>
+                            </div>
+                            <div class="bk_date">
+                                2023.02.08 10:13
+                            </div>
+                        </div> <div class="bk_news">
+                            <div class="bk_category travel">
+                                <a class="travel" href="#">旅遊</a>
+                            </div>
+                            <div class="bk_news_title">
+                                <a href="#">大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場</a>
+                            </div>
+                            <div class="bk_date">
+                                2023.02.08 10:13
+                            </div>
+                        </div>
+                        <div class="bk_news">
+                            <div class="bk_category fashion">
+                                <a class="fashion" href="#">時尚</a>
+                            </div>
+                            <div class="bk_news_title">
+                                <a href="#"> 谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知</a>
+                            </div>
+                            <div class="bk_date">
+                                2023.02.08 10:13
+                            </div>
+                        </div>
+                        <div class="bk_news">
+                            <div class="bk_category influencer">
+                                <a class="influencer" href="#">名家專欄</a>
+                            </div>
+                            <div class="bk_news_title">
+                                <a href="#">
+                                    島嶼學院＠馬祖 觀光創業大學堂開講
+                                </a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -419,7 +520,7 @@
                                 <a class="travel" href="#">旅遊</a>
                             </div>
                             <div class="bk_news_title">
-                                大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場
+                                <a href="#">大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場</a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -430,7 +531,7 @@
                                 <a class="fashion" href="#">時尚</a>
                             </div>
                             <div class="bk_news_title">
-                                谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知
+                                <a href="#"> 谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知</a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -441,18 +542,19 @@
                                 <a class="influencer" href="#">名家專欄</a>
                             </div>
                             <div class="bk_news_title">
-                                島嶼學院＠馬祖 觀光創業大學堂開講
+                                <a href="#">
+                                    島嶼學院＠馬祖 觀光創業大學堂開講
+                                </a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
                             </div>
-                        </div>
-                        <div class="bk_news">
+                        </div> <div class="bk_news">
                             <div class="bk_category travel">
                                 <a class="travel" href="#">旅遊</a>
                             </div>
                             <div class="bk_news_title">
-                                大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場
+                                <a href="#">大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場</a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -463,7 +565,7 @@
                                 <a class="fashion" href="#">時尚</a>
                             </div>
                             <div class="bk_news_title">
-                                谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知
+                                <a href="#"> 谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知</a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -474,40 +576,9 @@
                                 <a class="influencer" href="#">名家專欄</a>
                             </div>
                             <div class="bk_news_title">
-                                島嶼學院＠馬祖 觀光創業大學堂開講
-                            </div>
-                            <div class="bk_date">
-                                2023.02.08 10:13
-                            </div>
-                        </div>
-                        <div class="bk_news">
-                            <div class="bk_category travel">
-                                <a class="travel" href="#">旅遊</a>
-                            </div>
-                            <div class="bk_news_title">
-                                大溪花海休閒農場加入康莊休區 打造世外桃花源大溪花海休閒農場
-                            </div>
-                            <div class="bk_date">
-                                2023.02.08 10:13
-                            </div>
-                        </div>
-                        <div class="bk_news">
-                            <div class="bk_category fashion">
-                                <a class="fashion" href="#">時尚</a>
-                            </div>
-                            <div class="bk_news_title">
-                                谷關溫泉通體舒暢消除疲勞 山城走春櫻花趣好玩報你知
-                            </div>
-                            <div class="bk_date">
-                                2023.02.08 10:13
-                            </div>
-                        </div>
-                        <div class="bk_news">
-                            <div class="bk_category influencer">
-                                <a class="influencer" href="#">名家專欄</a>
-                            </div>
-                            <div class="bk_news_title">
-                                島嶼學院＠馬祖 觀光創業大學堂開講
+                                <a href="#">
+                                    島嶼學院＠馬祖 觀光創業大學堂開講
+                                </a>
                             </div>
                             <div class="bk_date">
                                 2023.02.08 10:13
@@ -546,6 +617,8 @@
                                 <div class="td_ar_title">
                                     <a href="#">
                                         Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
                                     </a>
                                 </div>
                                 <div class="td_date">
@@ -651,7 +724,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="today_news">
+                        <div class="week_news">
                             <div class="td_title">
                                 本周大事
                             </div>
@@ -793,7 +866,7 @@
                     <div class="ft_back_index">
                         <button>
                             <i class="fa-solid fa-house"></i>
-                            回到首頁
+                            <span>回到首頁</span>
                         </button>
                     </div>
                 </div>
@@ -822,7 +895,7 @@
                             <a href="#">人才招募</a>
                         </li>
                     </ul>
-                    天空傳媒(股)公司版權所有。本網站已依台灣網站內容分級規定處理
+                    <span>天空傳媒(股)公司版權所有 本網站已依台灣網站內容分級規定處理</span>
                 </div>
 
             </div>
@@ -835,6 +908,22 @@
                 $(".morebtn").hide();
             })
         });
+        $(document).ready(function () {
+            $(".opensearch").click(function () {
+                $(".anothersearch").slideToggle();
+            })
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
     </script>
 
 </html>
