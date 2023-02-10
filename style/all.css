@@ -800,9 +800,6 @@ input:focus {
 @media screen and (max-width: 767px) {
     .top {
         height: 75px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .logo {
         max-width: 200px;
