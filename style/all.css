@@ -1027,6 +1027,12 @@ input:focus {
     .opensearch {
         display: block;
     }
+    .menupagetitle h1 {
+        font-size: 1.6rem;
+    }
+    .menupage_article h2 {
+        font-size: 1.2rem
+    }
 }
 
 @media screen and (max-width: 500px) {
