@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./style/normalize.css" rel="stylesheet" type="text/css" />
+        <link href="./style/all.css" rel="stylesheet" type="text/css" />
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3342b80b26.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.js"
+            integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        <title>即時新聞 | 蕃新聞</title>
+    </head>
+
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="navtitle">
+                <span>所有新聞類別</span>
+            </div>
+            <div class="navoption">
+                <ul>
+                    <li><a href="#">焦點</a></li>
+                    <li><a href="#">新冠肺炎</a></li>
+                    <li><a href="#">即時</a></li>
+                    <li><a href="#">兔年新春特輯</a></li>
+                    <li><a href="#">社會</a></li>
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">財經</a></li>
+                    <li><a href="#">焦點</a></li>
+                    <li><a href="#">新冠肺炎</a></li>
+                    <li><a href="#">即時</a></li>
+                    <li><a href="#">社會</a></li>
+                    <li><a href="#">兔年新春特輯</a></li>
+                    <li><a href="#">社會</a></li>
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">財經</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top">
+            <div class="top_content">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="searchbar">
+                    <div class="keyword">
+                        熱門：
+                        <div class="keyword_tag">
+                            <a href="#">電費調漲</a>、
+                            <a href="#">午後雷陣雨</a>、
+                            <a href="#">開箱</a>、
+                            <a href="#">電費調漲</a>、
+                            <a href="#">午後雷陣雨</a>、
+                            <a href="#">電費調漲</a>、
+                            <a href="#">午後雷陣雨</a>
+                        </div>
+                    </div>
+                    <div class="search_content">
+                        <input type="search" id="searcharea" placeholder="請輸入關鍵字">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+                <div class="weather">
+                    <div class="weatherselect">
+                        <select name="地區" id="region">
+                            <option>基隆市</option>
+                            <option>臺北市</option>
+                            <option>新北市</option>
+                            <option>桃園市</option>
+                            <option>新竹市</option>
+                            <option>新竹縣</option>
+                            <option>苗栗縣</option>
+                            <option>台中市</option>
+                            <option>彰化縣</option>
+                            <option>南投縣</option>
+                            <option>雲林縣</option>
+                            <option>嘉義市</option>
+                            <option>嘉義縣</option>
+                            <option>臺南市</option>
+                            <option>高雄市</option>
+                            <option>屏東縣</option>
+                            <option>臺東縣</option>
+                            <option>花蓮縣</option>
+                            <option>宜蘭縣</option>
+                            <option>澎湖縣</option>
+                            <option>金門縣</option>
+                            <option>連江縣</option>
+                        </select>
+                    </div>
+                    <div class="temper">
+                        <div class="weather_img">
+                            <img src="./img/weather.png" alt="">
+                        </div>
+                        <span>12-15℃</span>
+                    </div>
+                </div>
+                <div class="menubutton">
+                    <button class="openmenu" onclick="openNav()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="anothersearch">
+            <div class="searchcontainer">
+                <input type="search" id="searcharea_sec" placeholder="請輸入關鍵字">
+                <div class="search_word">
+                    熱門：
+                    <div class="search_word_tag">
+                        <a href="#">電費調漲</a>、
+                        <a href="#">午後雷陣雨</a>、
+                        <a href="#">開箱</a>、
+                        <a href="#">電費調漲</a>、
+                        <a href="#">午後雷陣雨</a>、
+                        <a href="#">電費調漲</a>、
+                        <a href="#">午後雷陣雨</a>、
+                        <a href="#">開箱</a>、
+                        <a href="#">電費調漲</a>、
+                        <a href="#">午後雷陣雨</a>
+                        <a href="#">電費調漲</a>、
+                        <a href="#">午後雷陣雨</a>、
+                        <a href="#">開箱</a>、
+                        <a href="#">電費調漲</a>、
+                        <a href="#">午後雷陣雨</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_container">
+            <div class="news_category">
+                <ul>
+                    <li><a href="#">焦點</a></li>
+                    <li><a href="#">新冠肺炎</a></li>
+                    <li><a href="#">即時</a></li>
+                    <li><a href="#">兔年新春特輯</a></li>
+                    <li><a href="#">社會</a></li>
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">財經</a></li>
+                    <li><a href="#">健康</a></li>
+                    <li><a href="#">科技</a></li>
+                    <li><a href="#">焦點</a></li>
+                    <li><a href="#">新冠肺炎</a></li>
+                    <li><a href="#">即時</a></li>
+                    <li><a href="#">新冠</a></li>
+                    <li><a href="#">即時</a></li>
+                    <li><a href="#">新春</a></li>
+                    <li><a href="#">...</a></li>
+                </ul>
+            </div>
+            <div class="content_ad">
+                廣告
+            </div>
+            <div class="main_content">
+                <div class="page_left">
+                    <div class="news_article">
+                        <h1>新聞標題新聞標題</h1>
+                        <hr>
+                        <div class="news_article_detail">
+                            <div class="news_author">
+                                <span>今傳媒/<a href="#">何記者 秀菁</a></span>
+                                <span class="news_date">2023/02/14 15:00</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="news_pic">
+                            <img src="./img/1-1.jpg" alt="">
+                        </div>
+                        <div class="pic_intro">
+                         ▲ 九族櫻花季６日登場，超過5000棵櫻花接力綻放。（圖／九族文化村提供）
+                        </div>
+                        <div class="news_content">
+                            【今傳媒/記者何秀菁報導】全國最大的賞櫻盛事！九族文化村將於2月6日至3月5日展開為期一個月的櫻花祭活動，九族文化村園區內共栽種6種櫻花，超過5,000棵櫻花樹將接連盛開，其中率先綻放的「台灣雪櫻」屬新品種，花開雪白如雲朵，非常漂亮，搭配少見的夜間賞櫻，夜晚綻放的櫻花，搭配燈光照映，浪漫指數破表。
+                        </div>
+                        <div class="news_pic">
+                            <img src="./img/1-2.jpg" alt="">
+                        </div>
+                        <div class="pic_intro">
+                            ▲ 九族櫻花季記者會。（圖／九族文化村提供）
+                        </div>
+                        <div class="news_content">
+                            九族文化村3日上午舉行記者會，縣長許淑華到場，與九族執行董事張協堂、日月潭國家風景區管理處長簡慶發、縣府觀光處長陳志賢、魚池鄉長劉啟帆等人，在熱鬧的太鼓樂聲及舞蹈中宣布櫻花祭的到來，歡迎全國民眾到南投賞花。
+                            許縣長表示，花卉是南投非常重要的產業，一年四季都有各種不同的花盛開，緊接在李花與梅花之後就是櫻花季的到來，鹿谷、信義的櫻花也都逐漸盛開，九族文化村舉辦櫻花季活動已有20多年的時間，栽種規模越來越大，營造非常漂亮的場景，也成為遊客、網美熱愛拍照打卡的景點，相信為期一個月的櫻花季，可以讓更多朋友認識南投的美，留下美好的回憶。
+                        </div>
+                        <div class="news_pic">
+                            <img src="./img/1-3.jpg" alt="">
+                        </div>
+                        <hr>
+                        <div class="news_hot_tag">
+                            <span>熱門關鍵字：</span>
+                            <ul>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">九族櫻花季</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                                <li><a href="#">南投縣</a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="news_youtube">
+                            <span>蕃新聞推薦影片</span>
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/cyU3IUluYLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="news_featured">
+                            <span>編輯精選</span>
+                            <hr>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- 右側 -->
+                <div class="page_right">
+                    <div class="right_ad">
+                        廣告
+                    </div>
+                    <div class="hot_tag">
+                        <h3>熱門標籤</h3>
+                        <ul>
+                            <li><a href="#">2023年</a></li>
+                            <li><a href="#">2022年</a></li>
+                            <li><a href="#">星雲大師</a></li>
+                            <li><a href="#">大學</a></li>
+                            <li><a href="#">櫻花</a></li>
+                            <li><a href="#">國防部長</a></li>
+                            <li><a href="#">溫泉</a></li>
+                            <li><a href="#">春天</a></li>
+                            <li><a href="#">情人節</a></li>
+                            <li><a href="#">巧克力</a></li>
+                            <li><a href="#">糖果</a></li>
+                            <li><a href="#">糖果</a></li>
+                            <li><a href="#">糖果</a></li>
+                            <li><a href="#">元宵節</a></li>
+                        </ul>
+                    </div>
+                    <div class="right_news">
+                        <div class="today_news">
+                            <div class="td_title">
+                                <a class="section_title" href="#">今日要聞</a>
+                            </div>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="week_news">
+                            <div class="td_title">
+                                <a class="section_title" href="#">本周大事</a>
+                            </div>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="td_article">
+                                <div class="td_ar_title">
+                                    <a href="#">
+                                        Netflix詐騙信件流竄！注意以下兩點可以輕鬆辨識真假
+                                    </a>
+                                </div>
+                                <div class="td_date">
+                                    2022.11.01 14:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_bt_ad">
+                            廣告
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="ft_content">
+                <div class="ft_firstrow">
+                    <div class="ft_logo">
+                        <img src="./img/footerLogo.png">
+                    </div>
+                    <div class="ft_option">
+                        <ul>
+                            <li>
+                                <a href="#">即時新聞</a>
+                            </li>
+                            <li>
+                                <a href="#">輕旅行</a>
+                            </li>
+                            <li>
+                                <a href="#">地球圖輯隊</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ft_back_index">
+                        <button>
+                            <i class="fa-solid fa-house"></i>
+                            <span>回到首頁</span>
+                        </button>
+                    </div>
+                </div>
+                <hr>
+                <div class="ft_secondrow">
+                    <ul>
+                        <li>
+                            <a href="#">yam 輕旅行</a>
+                        </li>
+                        <li>
+                            <a href="#">服務條款</a>
+                        </li>
+                        <li>
+                            <a href="#">隱私權政策</a>
+                        </li>
+                        <li>
+                            <a href="#">服務中心</a>
+                        </li>
+                        <li>
+                            <a href="#">聯絡我們</a>
+                        </li>
+                        <li>
+                            <a href="#">廣告刊登</a>
+                        </li>
+                        <li>
+                            <a href="#">人才招募</a>
+                        </li>
+                    </ul>
+                    <span>
+                        copyright ©2023 yamedia Inc. All rights reserved.
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function () {
+            $(".morebtn").click(function () {
+                $(".moreshow").fadeToggle(500);
+                $(".morebtn").hide();
+            })
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+</html>
