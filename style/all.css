@@ -959,6 +959,57 @@ input:focus {
     text-decoration: none;
     color: #227D51;
 }
+.feature_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature_item {
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    border-bottom: 1px solid #908D8D;
+    padding: 0px 0px 10px 0px ;
+}
+.feature_item ul {
+    margin: 0;
+}
+
+.feature_num {
+    padding: 10px;
+    border: #62615F 1px solid;
+    border-radius: 50%;
+    width: 35px;
+    height: 30px;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+    line-height: 30px;
+}
+.border_none {
+    border: none;
+}
+.margin_right {
+    margin-right: 20px;
+}
+.ten {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 30px;
+}
+.feature_title {
+    margin-left: 15px;
+}
+.news_featured span{
+color: #227D51;
+}
 
 @media screen and (max-width: 1200px) {
     .article_menu ul {
@@ -1020,6 +1071,9 @@ input:focus {
 
     .opensearch {
         display: none;
+    }
+    .news_article {
+        padding: 0px 10px;
     }
 }
 
@@ -1141,6 +1195,28 @@ input:focus {
     .article_author {
         margin: 0;
     }
+    .feature_item{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .margin_right {
+        margin-right: 0;
+    }
+    .feature_num {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #000;
+        color: #000;
+        text-align: center;
+        font-size: 25px;
+        line-height: 25px;
+}
+.border_visible {
+    border-bottom: 1px solid #908D8D;
+}
+
 }
 
 @media screen and (max-width: 500px) {
@@ -1180,4 +1256,17 @@ input:focus {
     .ft_secondrow span {
         font-size: 0.5rem;
     }
+    .feature_num {
+        width: 22px;
+        height: 20px;
+        border: 1px solid #000;
+        color: #000;
+        text-align: center;
+        font-size: 22px;
+        line-height: 20px;
+}
+.ten {
+    line-height: 25px;
+    font-size: 20px;
+}
 }
