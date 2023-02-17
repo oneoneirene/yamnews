@@ -921,6 +921,9 @@ input:focus {
     text-decoration: none;
     color: #227D51;
 }
+.news_author a:hover {
+    text-decoration: underline;
+}
 .news_date{
     color: #a1a1a1;
 }
@@ -959,6 +962,12 @@ input:focus {
     text-decoration: none;
     color: #227D51;
 }
+.news_hot_tag ul li:hover {
+    background: #227D51;
+}
+.news_hot_tag ul li:hover a {
+    color: white;
+}
 .feature_menu {
     width: 100%;
     display: flex;
@@ -979,7 +988,13 @@ input:focus {
 .feature_item ul {
     margin: 0;
 }
-
+.feature_item ul li a {
+    text-decoration: none;
+    color: black;
+}
+.feature_item ul li:hover a {
+    color: #4769BF
+}
 .feature_num {
     padding: 10px;
     border: #62615F 1px solid;
@@ -1006,6 +1021,13 @@ input:focus {
 }
 .feature_title {
     margin-left: 15px;
+}
+.feature_title a {
+    text-decoration: none;
+    color: black;
+}
+.feature_title a:hover {
+    color: #4769BF;
 }
 .news_featured span{
 color: #227D51;
@@ -1213,10 +1235,21 @@ color: #227D51;
         font-size: 25px;
         line-height: 25px;
 }
+
 .border_visible {
     border-bottom: 1px solid #908D8D;
 }
 
+.news_hot_tag ul li a {
+    font-size: 0.9rem;
+}
+.news_hot_tag ul {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -1268,5 +1301,10 @@ color: #227D51;
 .ten {
     line-height: 25px;
     font-size: 20px;
+}
+.menu_button button {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
 }
 }
